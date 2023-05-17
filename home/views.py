@@ -3,3 +3,6 @@ from django.http import HttpResponse
 
 def app(req):
     return render(req,'test.html')
+
+def add_do(request):
+    return None
