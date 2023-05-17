@@ -13,12 +13,21 @@ def home(request):
     return render(request,'test.html',{'tasks':tasks})
 
 
-def add_do_task(request):
+def add_todo_task(request):
 
     if request.method == 'POST':
         session_id = request.COOKIES.get('sessionid')
         todo_task = request.POST['todo_task']
         Tasks.objects.create(session_id=session_id,do_task=todo_task)
+        return redirect(home)
+
+    return HttpResponse('Request Failed! Unauthorised Access')
+
+def del_todo_task(request):
+
+    if request.method == 'POST':
+        id = request.POST['task_id']
+        Tasks.objects.get(id=id).delete()
         return redirect(home)
 
     return HttpResponse('Request Failed! Unauthorised Access')
