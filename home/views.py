@@ -12,7 +12,6 @@ def create_user_session(request, user_id):
     request.session = session
     return user_id
 
-
 def home(request):
     user_id = request.session.get('user_id')
     tasks=[]
