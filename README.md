@@ -1,2 +1,3 @@
 # NextTodo
-![nexttodo (1)](https://github.com/Fawaskp/NextTodo/assets/68636810/226f1a9c-9402-4c10-8d45-654172bbec4d)
+![nexttodo(low-res)](https://github.com/Fawaskp/NextTodo/assets/68636810/ff345d75-6a93-4b9c-b96e-b517371b50ff)
+
