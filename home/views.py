@@ -15,7 +15,8 @@ def create_user_session(request, user_id):
 def home(request):
     user_id = request.session.get('user_id')
     tasks=[]
-
+    print('USER DEVICE  = ',request.META['HTTP_USER_AGENT'])
+    print('ip = ADDRESS = ',request.META.get('REMOTE_ADDR'))
     tasks = Tasks.objects.filter(user_id=user_id)
     return render(request,'test.html',{'tasks':tasks})
 

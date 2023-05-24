@@ -71,3 +71,31 @@ body {
 .card{
     box-shadow: 0 0 20px .5px #cccccc;
 }
+
+@media (max-width: 576px) {
+    /* Adjust the font size for small screens */
+    input[type="text"],
+    button {
+        font-size: 12px;
+    }
+    .text-size{
+      font-size: 12px;
+    }
+    .btn{
+      --bs-btn-padding-y: 0.25rem;
+      --bs-btn-padding-x: 0.5rem;
+      --bs-btn-font-size: 0.875rem;
+      --bs-btn-border-radius: var(--bs-border-radius-sm);
+    }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+    /* Adjust the font size for medium screens */
+    input[type="text"],
+    button {
+        font-size: 14px;
+    }
+    .text-size{
+      font-size: 14px;
+    }
+}
